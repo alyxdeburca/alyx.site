@@ -16,8 +16,24 @@
     font-size: 45pt;
     text-align: center;
     padding-top: 20pt;
-    animation: fade_in;
 }
+#intro1 {
+    color:white;
+    font-family: 'Roboto Mono';
+    font-weight: 1000;
+    font-size: 45pt;
+    text-align: center;
+    padding-top: 20pt;
+}
+#intro2 {
+    color:white;
+    font-family: 'Roboto Mono';
+    font-weight: 1000;
+    font-size: 45pt;
+    text-align: center;
+    padding-top: 20pt;
+}
+
 
 body {
     background-color: black;

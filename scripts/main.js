@@ -13,4 +13,12 @@ setTimeout(loadIntro, 1300)
 
 function loadIntro() {
     document.getElementById('intro').style.display='block';
+    loadIntro1()
+}
+function loadIntro1() {
+    document.getElementById('intro1').style.display='block';
+    loadIntro2()
+}
+function loadIntro2() {
+    document.getElementById('intro2').style.display='block';
 }
