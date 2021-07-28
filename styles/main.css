@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+
+#scrolling {
+    color:white;
+    font-family: 'Roboto Mono';
+    font-weight: 1000;
+    font-size: 70pt;
+    text-align: center;
+}
+
+#intro {
+    color:white;
+    font-family: 'Roboto Mono';
+    font-weight: 1000;
+    font-size: 45pt;
+    text-align: center;
+    padding-top: 20pt;
+    animation: fade_in;
+}
+
+body {
+    background-color: black;
+    size: 100%;
+}
