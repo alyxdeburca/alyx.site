@@ -21,4 +21,9 @@ function loadIntro1() {
 }
 function loadIntro2() {
     document.getElementById('intro2').style.display='block';
+    loadContact()
+}
+
+function loadContact() {
+    document.getElementById('contact').style.display='block';
 }
