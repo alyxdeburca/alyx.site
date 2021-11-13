@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - name: Create cs.html
-      run: python ../parsing.py
+      run: python /parsing.py
     - name: switching from HTTPS to SSH
       run: git remote set-url origin ${{ secrets.SSH_KEY }}
     - name: check for changes
