@@ -15,8 +15,6 @@ jobs:
       uses: actions/checkout@v2 # checkout the repository content to github runner.
     - name: Create cs.html
       run: python ./parsing.py
-    - name: switching from HTTPS to SSH
-      run: git remote set-url origin ${{ secrets.SSH_KEY }}
     - name: check for changes
       run: git status
     - name: stage changed files
