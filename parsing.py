@@ -9,9 +9,15 @@ for item in inv["rgDescriptions"]:
     inv_dict.append(inv["rgDescriptions"][item]["name"])
 
 f = open("cs.html", "w")
-table = "</br>".join(inv_dict)
+table = "</br>\n".join(inv_dict)
 html = """
-<html> 
-<p>""" + table + """
+<html>
+<head>
+<!-- Main Stylesheet -->
+<link rel="stylesheet"  type="text/css" href="styles/main.css">
+<!-- Google Fonts Stylesheet -->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+<p id="inv">""" + table + """
 </p></html>"""
 f.write(html)

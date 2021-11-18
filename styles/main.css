@@ -63,6 +63,13 @@
     margin-right: auto;
 }
 
+#inv {
+    color:white;
+    background: darkslategray;
+    font-family: Roboto, sans-serif;
+    font-size: 1.25rem;
+}
+
 a {
     color:inherit;
 }
