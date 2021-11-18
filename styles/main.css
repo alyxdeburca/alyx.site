@@ -73,3 +73,11 @@
 a {
     color:inherit;
 }
+
+body {
+    background-color: #121212;
+}
+
+.card-body {
+    background-color: 6200EE;
+}
