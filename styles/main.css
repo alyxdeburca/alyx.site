@@ -68,16 +68,10 @@
     background: darkslategray;
     font-family: Roboto, sans-serif;
     font-size: 1.25rem;
+    text-align: center;
+    align-self: center;
 }
 
 a {
     color:inherit;
-}
-
-.container-fluid {
-    background-color: 424242;
-}
-
-.card-body {
-    background-color: 0277BD;
 }
