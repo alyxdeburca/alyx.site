@@ -19,6 +19,6 @@ jobs:
       run: |
         git config --global user.name 'Alyx Burke'
         git config --global user.email 'alyx@alyx.site'
-        git add cs.html
-        git commit -am "Update cs.html"
+        git add cs/index.html
+        git commit -am "Update cs/index.html"
         git push
