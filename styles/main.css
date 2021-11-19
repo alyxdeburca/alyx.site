@@ -74,7 +74,7 @@ a {
     color:inherit;
 }
 
-body {
+.container-fluid {
     background-color: #121212;
 }
 
