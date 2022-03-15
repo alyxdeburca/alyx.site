@@ -1,7 +1,7 @@
 from json import loads
 from os import remove
 import urllib.request
-url = "http://steamcommunity.com/id/csalyx/inventory/json/730/2"
+url = "http://steamcommunity.com/id/alyxdb/inventory/json/730/2"
 data = urllib.request.urlopen(url).read().decode()
 inv = loads(data)
 inv_dict = []
