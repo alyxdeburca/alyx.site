@@ -139,7 +139,7 @@
 #aSide model-viewer {
     height: 600px;
     width: 600px;
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     border: none;
