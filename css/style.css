@@ -97,8 +97,9 @@
     height: 500px;
     width: 140px;
     background: none;
-    position: absolute;
+    position: fixed;
     left: 0;
+    z-index: 1000;
     top: calc(50% - 250px);
     display: flex;
     align-items: center;
@@ -128,27 +129,34 @@
 #aSide {
     height: 600px;
     width: 600px;
-    position: absolute;
-    top: calc(50% - 250px);
+    position: sticky;
+    /* top: calc(50% - 250px); */
+    z-index: 100;
+    top: 250px;
     right: 0%;
 }
 
 /* This styles the 3D object inserted in the aside container */
-#aSide model-viewer {
+model-viewer {
     height: 600px;
     width: 600px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: none;
+    position: fixed;
+    /* top: calc(50% - 250px); */
+    z-index: 100;
+    top: 250px;
+    right: 0%;
 }
-a:link { text-decoration: none; }
+a:link { text-decoration: none; color:grey;}
 
 
-a:visited { text-decoration: none; }
+a:visited { text-decoration: none; color:grey;}
 
 
-a:hover { text-decoration: none; }
+a:hover { text-decoration: none; color:grey;}
 
 
 a:active { text-decoration: none; }
+.about {
+    z-index:101;
+    top: 0;
+}
