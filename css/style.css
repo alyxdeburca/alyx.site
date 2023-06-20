@@ -130,7 +130,7 @@
     height: 600px;
     width: 600px;
     position: sticky;
-    /* top: calc(50% - 250px); */
+    top: calc(50% - 250px);
     z-index: 100;
     top: 250px;
     right: 0%;
@@ -141,7 +141,6 @@ model-viewer {
     height: 600px;
     width: 600px;
     position: fixed;
-    /* top: calc(50% - 250px); */
     z-index: 100;
     top: 250px;
     right: 0%;
