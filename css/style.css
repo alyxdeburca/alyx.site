@@ -129,21 +129,20 @@
 #aSide {
     height: 600px;
     width: 600px;
-    position: sticky;
+    position: fixed;
     top: calc(50% - 250px);
     z-index: 100;
-    top: 250px;
     right: 0%;
 }
 
 /* This styles the 3D object inserted in the aside container */
-model-viewer {
+#aSide model-viewer {
     height: 600px;
     width: 600px;
-    position: fixed;
-    z-index: 100;
-    top: 250px;
-    right: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
 }
 a:link { text-decoration: none; color:grey;}
 
