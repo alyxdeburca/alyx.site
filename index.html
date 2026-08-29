@@ -1,67 +1,164 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="Alyx Burke — software developer based in Galway, Ireland. Linux, self-hosting, IoT, and the occasional emulator.">
+    <meta name="author" content="Alyx Burke">
+
+    <meta property="og:title" content="Alyx Burke">
+    <meta property="og:description" content="software developer · galway, ireland">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alyx.site/">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='14' height='10' x='1' y='3' rx='1' fill='%23c4541a'/%3E%3Crect width='10' height='6' x='3' y='5' fill='%23faf9f6'/%3E%3Crect width='12' height='1' x='2' y='13' fill='%231a1a1a'/%3E%3C/svg%3E">
+
     <link rel="stylesheet" href="css/style.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-    <script src="https://kit.fontawesome.com/9cec2c4fc2.js" crossorigin="anonymous"></script>
 
-    <title>Alyx Burke</title>
+    <title>alyx burke</title>
 </head>
-
 <body>
 
-    <!-- Main Container -->
-    <div id="container">
-        <!-- Navbar container -->
-        <div id="navbar">
-            <!-- <div id="logo">
-                <img src="assets/logo.png" alt="logo">
-            </div> -->
+<header class="topbar">
+    <div class="wrap topbar-inner">
+        <div class="prompt"><span class="user">alyx</span><span class="muted">@</span>alyx.site:<span class="muted">~</span>$ <span class="cursor" aria-hidden="true"></span></div>
+        <nav>
             <ul>
-                <li class="active">
-                    <a href="#content">Home</a>
-                </li>
-                <li><a href="https://github.com/alyxdeburca">Projects</a></li>
-                <li><a href="https://blog.alyx.site">Blog</a></li>
+                <li><a href="/" aria-current="page">~/home</a></li>
+                <li><a href="#projects">~/projects</a></li>
+                <li><a href="#now">~/now</a></li>
+                <li><a href="https://blog.alyx.site" rel="me">blog</a></li>
+                <li><a href="about.html">/about</a></li>
             </ul>
-        </div>
-        <!-- An aside -->
-        <div id="aSide">
-        <!-- This is for holding the 3D object -->
-            <model-viewer src="assets/website.gltf" alt="CZ-75" auto-rotate ar environment-image="assets/white.png" ios-src="assets/website.gltf"></model-viewer>
-        </div>
-        <!-- Content container -->
-        <!-- This is for holding some brief description about the 3D object -->
-        <div id="content">
-            <h2>Alyx Burke</h2>
-            <p>A teenager with more ideas than time.</p>
+        </nav>
+    </div>
+</header>
 
-        </div>
-        <!-- Social media icons -->
-        <!-- This is for holding some company's social media icons and related links -->
-        <div id="icons">
-            <div id="iconsLogo">
-                <a href="https://steamcommunity.com/id/alyxdb"><i class="fab fa-steam"></i></a>
-                <a href="https://instagram.com/alyxdeburca"><i class="fab fa-instagram"></i></a>
-                <a href="https://youtube.com/@alyxburke"><i class="fab fa-youtube"></i></a>
-                <a href="https://twitter.com/alyxburke"><i class="fab fa-twitter"></i></a>
+<main>
+    <div class="wrap">
+
+        <!-- hero -->
+        <section class="hero" aria-labelledby="name">
+            <div class="hero-text">
+                <h1 id="name">Alyx Burke</h1>
+                <div class="tag">software developer · galway, ireland</div>
+                <p class="lede">
+                    I build small things on Linux — self-hosted services, weird little web apps, emulators that don't need to exist, and the occasional microcontroller project. Long-time *nix user, long-time list-tinkerer.
+                </p>
+
+                <div class="terminal" aria-label="intro">
+<span class="ln"><span class="p">$</span> <span class="k">whoami</span></span>
+<span class="ln">alyx</span>
+<span class="ln"><span class="p">$</span> <span class="k">uname</span> -srm</span>
+<span class="ln">Linux 6.x x86_64</span>
+<span class="ln"><span class="p">$</span> <span class="k">cat</span> ~/now.txt <span class="c"># see below</span></span>
+                </div>
+
+                <p class="about-teaser" style="margin-top:24px;">
+                    <span class="muted">more about me →</span>
+                    <a href="about.html">/about</a>
+                </p>
             </div>
-        </div>
+
+            <div class="hero-model">
+                <model-viewer
+                    src="assets/computer.glb"
+                    alt="A low-poly retro desktop computer with an amber CRT monitor"
+                    camera-controls
+                    auto-rotate
+                    rotation-per-second="18deg"
+                    interaction-prompt="none"
+                    shadow-intensity="0.6"
+                    environment-image="assets/white.png"
+                    exposure="1.05">
+                </model-viewer>
+                <div class="model-caption">// computer.glb — CC0 (Kenney)</div>
+            </div>
+        </section>
+
+        <!-- projects -->
+        <section id="projects" aria-labelledby="projects-h">
+            <h2 id="projects-h">selected work</h2>
+            <p class="muted" style="margin-bottom:16px;">A handful of things I've actually shipped. More on <a href="https://github.com/alyxdeburca">github</a>.</p>
+
+            <table class="projects">
+                <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>description</th>
+                        <th>lang</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://github.com/alyxdeburca/simply-haystack">simply-haystack</a></td>
+                        <td class="desc">Flask + Docker webui for <span class="inline-code">findmy.py</span>. Track your own AirTags, no Apple required.</td>
+                        <td class="lang">python · html</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/alyxdeburca/dotfiles">dotfiles</a></td>
+                        <td class="desc">My *nix config. Tinkered with more than shipped.</td>
+                        <td class="lang">c · shell</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/alyxdeburca/ps-autobattler">ps-autobattler</a></td>
+                        <td class="desc">Heuristic auto-battler for the Pokemon Showdown headless engine. ~69% winrate vs random AI.</td>
+                        <td class="lang">javascript</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/alyxdeburca/ps-autobattler-extension">ps-autobattler-extension</a></td>
+                        <td class="desc">Chrome extension that pairs with the above — live battle advisor for Pokemon Showdown.</td>
+                        <td class="lang">javascript</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/alyxdeburca/blog">blog</a></td>
+                        <td class="desc">Source for <a href="https://blog.alyx.site">blog.alyx.site</a>. I post rarely but honestly.</td>
+                        <td class="lang">css</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/alyxdeburca/cemutil">cemutil</a></td>
+                        <td class="desc">Tiny script to install and launch Cemu (Wii U emulator) on Linux.</td>
+                        <td class="lang">shell</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/alyxdeburca/mmp-companion">mmp-companion</a></td>
+                        <td class="desc">Companion extension for the Maker Management Platform — import projects as you browse the web.</td>
+                        <td class="lang">javascript</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- now -->
+        <section id="now" aria-labelledby="now-h">
+            <h2 id="now-h">~/now.txt</h2>
+            <p class="muted" style="margin-bottom:12px;">What I'm up to, in plain text. Inspired by <a href="https://nownownow.com/about" rel="noopener">nownownow</a>.</p>
+            <pre class="now"><span class="c"># last updated: 2026-08</span>
+<span class="k">running:</span>   arch on the desktop, debian on the pi
+<span class="k">building:</span>  small things for myself, mostly
+<span class="k">reading:</span>   too many manpages
+<span class="k">playing:</span>   with emulators that don't need to exist
+<span class="k">avoiding:</span>  writing the next blog post</pre>
+        </section>
+
     </div>
-    <div id="container" >
-        <div id="content" class="about">
-            <h3>Who Am I?</h3>
-            <p style="font-size: 30px;">I'm Alyx! I'm 20 and my life pretty much revolves around programming and Counter-Strike</p>
-            <br>
-            <p style="font-size: 25px;">I have a blog too. I don't post often but it's an insight into me personally and creatively.</p>
-            <br>
-            <p style="font-size: 20px;">It's <a href="https://blog.alyx.site">Here!</a></p>
-        </div>
+</main>
+
+<footer>
+    <div class="wrap foot-row">
+        <div>alyx burke · <a href="mailto:alyx@alyx.site">alyx@alyx.site</a></div>
+        <ul class="foot-links">
+            <li><a href="https://github.com/alyxdeburca" rel="me">github</a></li>
+            <li><a href="https://twitter.com/anotheralyx" rel="me">twitter</a></li>
+            <li><a href="https://blog.alyx.site" rel="me">blog</a></li>
+            <li><a href="https://instagram.com/alyxdeburca" rel="me">instagram</a></li>
+            <li><a href="https://youtube.com/@alyxburke" rel="me">youtube</a></li>
+            <li><a href="https://steamcommunity.com/id/alyxdb" rel="me">steam</a></li>
+        </ul>
     </div>
+</footer>
+
 </body>
-<meta name="cf-2fa-verify" content="7b29fea06badec5">
 </html>
